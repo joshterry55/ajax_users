@@ -1,0 +1,36 @@
+<h1 class='center'>AJAX Users</h1>
+<hr>
+<div class="container">
+  <div >
+    <form id='add-user-form' method="POST" action='api/v1/users'>
+      <label>First Name</label>
+      <input id='user-first-name' type='text' name='user[first_name]' required />
+      <br>
+      <label>Last Name</label>
+      <input id='user-last-name' type='text' name='user[last_name]' required />
+      <br>
+      <label>Phone Number</label>
+      <input id='user-phone-number' type='text' name='user[phone_number]' />
+      <br>
+      <input type='submit' class='btn btn-success' />
+    </form>
+  </div>
+  <div >
+    <h3 class="center">Users List</h3>
+
+    <button class='btn blue center' id='get-users'>Get Users</button><br><br>
+    <div id='users' class='row'>
+    </div>
+  </div>
+
+  <div id='show-box' class="center">
+    <p>First Name: <br><span id="first_name_show"></span></p>
+    <p>Last Name: <br><span id="last_name_show"></span></p>
+    <p>Phone Number: <br><span id="phone_number_show"></span></p>
+    <div id='close' class='center btn red'>
+      Close
+    </div>
+  </div>
+  <div id="show-cancel">
+  </div>
+</div>

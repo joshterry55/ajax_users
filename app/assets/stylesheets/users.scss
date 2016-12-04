@@ -1,0 +1,46 @@
+.floatleft {
+  float: left;
+  width: 50%;
+}
+
+body {
+  font-family: 'Reem Kufi', sans-serif;
+  // background-color: lightblue;
+}
+
+#show-box {
+  position: fixed;
+  width: 500px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -160px;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+#show-cancel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.25);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.flash {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #34A853;
+  color: white;
+}
